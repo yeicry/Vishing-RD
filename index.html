@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevención de Vishing - Universidad O&M</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/placeholder.svg?height=40&width=40" alt="Logo U&O" width="40">
+                <span>Universidad O&M</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alertas">Alertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#que-es">¿Qué es?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#estadisticas">Estadísticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prevencion">Prevención</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#recursos">Recursos</a></li>
+                            <li><a class="dropdown-item" href="#quiz">Quiz</a></li>
+                            <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                            <li><a class="dropdown-item" href="#comunidad">Comunidad</a></li>
+                            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-right">
+                    <h1 class="mb-4">¡Protégete del <span class="text-gradient">Vishing</span>!</h1>
+                    <p class="lead mb-4">Aprende a identificar y prevenir el fraude telefónico con la Universidad O&M. Tu seguridad es nuestra prioridad.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#que-es" class="btn btn-primary btn-lg">Saber más</a>
+                        <a href="#cursos" class="btn btn-outline-primary btn-lg">Ver cursos</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <img src="/placeholder.svg?height=500&width=500" alt="Vishing Illustration" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-time Alerts Section -->
+    <section id="alertas" class="alerts-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-1 text-center">
+                    <i class="bi bi-exclamation-triangle-fill display-5"></i>
+                </div>
+                <div class="col-md-8">
+                    <h3 class="mb-2 fw-bold">¡Alerta de Vishing Activa!</h3>
+                    <p class="mb-0" id="current-alert">Se han detectado llamadas fraudulentas haciéndose pasar por Banco Popular solicitando verificación de datos por "irregularidades en su cuenta".</p>
+                </div>
+                <div class="col-md-3 text-md-end mt-3 mt-md-0">
+                    <a href="#todas-alertas" class="btn btn-outline-light">Ver todas las alertas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Vishing Section -->
+    <section id="que-es" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">CONOCIMIENTO</h6>
+                <h2 class="display-5 fw-bold mb-3">¿Qué es el <span class="text-gradient">Vishing</span>?</h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">El fraude telefónico que está afectando a miles de dominicanos.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center reveal">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-right">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Ejemplo de Vishing" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <p class="lead mb-4">El <strong>vishing</strong> es una forma de fraude telefónico en la que los delincuentes intentan engañarte para que reveles información personal o financiera sensible.</p>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-telephone-x fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Llamadas falsas</h5>
+                            <p>A través de llamadas o mensajes de voz falsos, los estafadores se hacen pasar por instituciones legítimas, como bancos, compañías de tarjetas de crédito o agencias gubernamentales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-shield-lock fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Robo de identidad</h5>
+                            <p>Su objetivo es obtener datos como números de cuenta, contraseñas, números de seguro social o cualquier otra información que puedan utilizar para robar tu identidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-currency-exchange fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Pérdidas financieras</h5>
+                            <p>Los estafadores utilizan técnicas de ingeniería social para manipular a las víctimas y causar pérdidas financieras significativas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="estadisticas" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">ESTADÍSTICAS</h6>
+                <h2 class="display-5 fw-bold mb-3">Vishing en <span class="text-gradient">República Dominicana</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Datos que reflejan la magnitud del problema en nuestro país.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 reveal">
+                <div class="col-md-3 fade-up delay-1">
+                    <div class="card shadow-sm stats-card">
+                        <div class="display-3 fw-bold">45%</div>
+                        <p class="lead">Aumento de casos en 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-3 fade-up delay-2">
+                    <div class="card shadow-sm stats-card">
+                        <div class="display-3 fw-bold">RD$15M</div>
+                        <p class="lead">Pérdidas mensuales estimadas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 fade-up delay-3">
+                    <div class="card shadow-sm stats-card">
+                        <div class="display-3 fw-bold">68%</div>
+                        <p class="lead">Víctimas mayores de 50 años</p>
+                    </div>
+                </div>
+                <div class="col-md-3 fade-up delay-4">
+                    <div class="card shadow-sm stats-card">
+                        <div class="display-3 fw-bold">3 de 10</div>
+                        <p class="lead">Dominicanos han recibido intentos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5 g-4 reveal">
+                <div class="col-lg-6 fade-right">
+                    <div class="chart-container">
+                        <h4><i class="bi bi-pie-chart-fill me-2 text-primary"></i>Tipos de Vishing más comunes</h4>
+                        <canvas id="vishingTypesChart" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <div class="chart-container">
+                        <h4><i class="bi bi-graph-up me-2 text-primary"></i>Tendencia de casos por mes</h4>
+                        <canvas id="vishingTrendsChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prevention Section -->
+    <section id="prevencion" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">PROTECCIÓN</h6>
+                <h2 class="display-5 fw-bold mb-3">¿Cómo prevenir el <span class="text-gradient">Vishing</span>?</h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Sigue estas recomendaciones para protegerte del fraude telefónico.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 reveal">
+                <div class="col-md-4 fade-up delay-1">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:60px;height:60px">
+                                        <i class="bi bi-shield-exclamation fs-3 text-primary"></i>
+                                    </div>
+                                </div>
+                                <h5 class="card-title mb-0">Mantente Alerta</h5>
+                            </div>
+                            <p class="card-text">Desconfía de llamadas inesperadas que soliciten información personal o financiera, incluso si parecen provenir de fuentes confiables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up delay-2">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:60px;height:60px">
+                                        <i class="bi bi-check2-circle fs-3 text-primary"></i>
+                                    </div>
+                                </div>
+                                <h5 class="card-title mb-0">Verifica la Identidad</h5>
+                            </div>
+                            <p class="card-text">Si recibes una llamada sospechosa, cuelga y contacta directamente a la institución utilizando un número de teléfono oficial para verificar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up delay-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:60px;height:60px">
+                                        <i class="bi bi-lock fs-3 text-primary"></i>
+                                    </div>
+                                </div>
+                                <h5 class="card-title mb-0">No Compartas Información</h5>
+                            </div>
+                            <p class="card-text">Nunca reveles contraseñas, números de cuenta o datos personales por teléfono. Las entidades legítimas no solicitan esta información.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-3 reveal">
+                <div class="col-md-4 fade-up delay-2">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:60px;height:60px">
+                                        <i class="bi bi-stopwatch fs-3 text-primary"></i>
+                                    </div>
+                                </div>
+                                <h5 class="card-title mb-0">Cuidado con la Urgencia</h5>
+                            </div>
+                            <p class="card-text">Los estafadores suelen crear un sentido de urgencia para presionarte a actuar rápidamente sin pensar. Tómate tu tiempo para verificar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up delay-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:60px;height:60px">
+                                        <i class="bi bi-book fs-3 text-primary"></i>
+                                    </div>
+                                </div>
+                                <h5 class="card-title mb-0">Infórmate</h5>
+                            </div>
+                            <p class="card-text">Mantente al tanto de las últimas estafas y comparte esta información con tus familiares y amigos, especialmente con las personas mayores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up delay-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:60px;height:60px">
+                                        <i class="bi bi-megaphone fs-3 text-primary"></i>
+                                    </div>
+                                </div>
+                                <h5 class="card-title mb-0">Reporta el Vishing</h5>
+                            </div>
+                            <p class="card-text">Si recibes una llamada sospechosa, repórtala a las autoridades y a la institución afectada. Esto ayuda a todos a estar alerta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">TESTIMONIOS</h6>
+                <h2 class="display-5 fw-bold mb-3">Experiencias <span class="text-gradient">Reales</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Conoce las historias de personas que han enfrentado situaciones de vishing.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-10">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card shadow testimonial-card">
+                                    <div class="testimonial-author">
+                                        <img src="/placeholder.svg?height=80&width=80" alt="María Rodríguez">
+                                        <div>
+                                            <h5 class="fw-bold mb-1">María Rodríguez</h5>
+                                            <p class="text-muted mb-0">Santo Domingo</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        "Recibí una llamada de alguien que decía ser de mi banco. Me dijeron que habían detectado un cargo sospechoso y necesitaban verificar mi información. Por suerte, recordé lo que aprendí en el curso de prevención y colgué inmediatamente. Llamé directamente a mi banco y confirmaron que era un intento de fraude."
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card shadow testimonial-card">
+                                    <div class="testimonial-author">
+                                        <img src="/placeholder.svg?height=80&width=80" alt="Carlos Méndez">
+                                        <div>
+                                            <h5 class="fw-bold mb-1">Carlos Méndez</h5>
+                                            <p class="text-muted mb-0">Santiago</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        "Lamentablemente caí en una estafa de vishing. Me llamaron diciendo que era de la compañía telefónica y que tenía un descuento especial. Terminé dando información personal y tuve problemas después. Ahora tomo los cursos de la Universidad O&M y estoy mucho más alerta. Recomiendo a todos que se eduquen sobre este tema."
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card shadow testimonial-card">
+                                    <div class="testimonial-author">
+                                        <img src="/placeholder.svg?height=80&width=80" alt="Ana Gómez">
+                                        <div>
+                                            <h5 class="fw-bold mb-1">Ana Gómez</h5>
+                                            <p class="text-muted mb-0">La Romana</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        "Mi madre de 68 años casi cae en un intento de vishing donde le dijeron que su nieto estaba detenido y necesitaba dinero. Gracias a que habíamos hablado sobre estas estafas, ella supo reconocer las señales de alarma y evitó ser víctima. Es importante educar a nuestros familiares mayores sobre estos peligros."
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                        <div class="carousel-indicators position-relative mt-4">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">FORMACIÓN</h6>
+                <h2 class="display-5 fw-bold mb-3">Cursos de <span class="text-gradient">Prevención</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Programa de formación especializado para protegerte del vishing.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 reveal">
+                <div class="col-md-4 fade-up delay-1">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Curso Básico">
+                            <div class="position-absolute top-0 end-0 p-3">
+                                <span class="badge bg-success px-3 py-2">Gratuito</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vishing: Nivel Básico</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-clock text-primary me-2"></i>
+                                <span>4 semanas • 2 horas/semana</span>
+                            </div>
+                            <p class="card-text mb-4">Aprende los fundamentos del vishing y cómo protegerte de las estafas más comunes que afectan a los dominicanos.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Inscribirse</a>
+                                <div class="text-end">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">(128 valoraciones)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up delay-2">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Curso Intermedio">
+                            <div class="position-absolute top-0 end-0 p-3">
+                                <span class="badge bg-primary px-3 py-2">Popular</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vishing: Nivel Intermedio</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-clock text-primary me-2"></i>
+                                <span>6 semanas • 3 horas/semana</span>
+                            </div>
+                            <p class="card-text mb-4">Profundiza tus conocimientos y aprende a identificar técnicas de vishing más sofisticadas que están apareciendo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Inscribirse</a>
+                                <div class="text-end">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">(95 valoraciones)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up delay-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Curso Avanzado">
+                            <div class="position-absolute top-0 end-0 p-3">
+                                <span class="badge bg-secondary px-3 py-2">Certificado</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vishing: Nivel Avanzado</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-clock text-primary me-2"></i>
+                                <span>8 semanas • 4 horas/semana</span>
+                            </div>
+                            <p class="card-text mb-4">Conviértete en un experto en prevención de vishing y protege a tu comunidad con técnicas profesionales.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Inscribirse</a>
+                                <div class="text-end">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">(72 valoraciones)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="recursos" class="section-padding-sm bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">RECURSOS</h6>
+                <h2 class="display-5 fw-bold mb-3">Material <span class="text-gradient">Adicional</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Documentos, guías y herramientas para ayudarte a prevenir el vishing.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 reveal">
+                <div class="col-md-6 fade-right">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4"><i class="bi bi-file-earmark-text text-primary me-2"></i>Guías y Documentos</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-file-pdf me-2"></i>Guía completa sobre Vishing</span>
+                                        <i class="bi bi-download"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-file-text me-2"></i>Preguntas frecuentes sobre estafas telefónicas</span>
+                                        <i class="bi bi-download"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-file-earmark-text me-2"></i>Cómo reportar un intento de Vishing</span>
+                                        <i class="bi bi-download"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-file-earmark-check me-2"></i>Checklist de seguridad telefónica</span>
+                                        <i class="bi bi-download"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 fade-left">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4"><i class="bi bi-tools text-primary me-2"></i>Herramientas y Enlaces</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-shield-check me-2"></i>Herramientas para proteger tu teléfono</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-person-lock me-2"></i>Consejos para evitar el robo de identidad</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-camera-video me-2"></i>Webinars sobre seguridad cibernética</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <span><i class="bi bi-globe me-2"></i>Enlaces a autoridades de seguridad</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">EVALUACIÓN</h6>
+                <h2 class="display-5 fw-bold mb-3">Pon a Prueba tus <span class="text-gradient">Conocimientos</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">¿Sabes identificar y prevenir el vishing? Descúbrelo con este breve cuestionario.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <div id="quiz-container" class="quiz-container">
+                                <div id="quiz-start" class="quiz-title">
+                                    <div class="mb-4">
+                                        <img src="/placeholder.svg?height=150&width=150" alt="Quiz Icon" class="img-fluid mb-4">
+                                    </div>
+                                    <h3 class="mb-4 fw-bold">¿Sabes cómo identificar y prevenir el vishing?</h3>
+                                    <p class="lead mb-4">Este cuestionario te ayudará a evaluar tus conocimientos sobre prevención de vishing. Responde las 5 preguntas y descubre tu nivel de preparación.</p>
+                                    <button id="start-quiz" class="btn btn-primary btn-lg">Comenzar Cuestionario</button>
+                                </div>
+                                
+                                <div id="quiz-questions" class="d-none">
+                                    <div class="mb-4 quiz-question">
+                                        <h4 id="question-text" class="mb-4 fw-bold"></h4>
+                                        <div id="answer-options" class="d-grid gap-3">
+                                            <!-- Options will be inserted here by JavaScript -->
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                        <span id="question-number" class="text-primary fw-bold">Pregunta 1 de 5</span>
+                                        <button id="next-question" class="btn btn-primary" disabled>Siguiente Pregunta</button>
+                                    </div>
+                                </div>
+                                
+                                <div id="quiz-results" class="d-none quiz-results">
+                                    <h3 class="mb-4 fw-bold">Resultados</h3>
+                                    <div class="score-display"><span id="score">0</span>/5</div>
+                                    <p id="result-message" class="lead mb-4 mt-3">Mensaje basado en tu puntuación</p>
+                                    <div class="d-grid gap-3 d-md-flex justify-content-md-center mt-4">
+                                        <button id="retake-quiz" class="btn btn-outline-primary btn-lg">Intentar de nuevo</button>
+                                        <a href="#cursos" class="btn btn-primary btn-lg">Ver cursos de prevención</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">ARTÍCULOS</h6>
+                <h2 class="display-5 fw-bold mb-3">Noticias y <span class="text-gradient">Artículos</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Mantente informado sobre las últimas noticias y tendencias en seguridad.</p>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center mb-4 reveal">
+                <h3 class="fw-bold mb-0">Publicaciones Recientes</h3>
+                <a href="#" class="btn btn-outline-primary">Ver todas</a>
+            </div>
+            
+            <div class="row g-4 reveal">
+                <div class="col-md-4 fade-up delay-1">
+                    <div class="card h-100 border-0 shadow-sm blog-card">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Nueva modalidad de vishing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-danger">Alerta</span>
+                                <small class="text-muted">15 marzo, 2025</small>
+                            </div>
+                            <h3 class="card-title fs-4">Nueva modalidad de vishing dirigida a jóvenes dominicanos</h3>
+                            <p class="card-text">Detectan estafadores que se hacen pasar por empresas de streaming ofreciendo descuentos especiales para obtener datos de tarjetas.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-link p-0">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 fade-up delay-2">
+                    <div class="card h-100 border-0 shadow-sm blog-card">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Entrevista con experto">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary">Entrevista</span>
+                                <small class="text-muted">8 marzo, 2025</small>
+                            </div>
+                            <h3 class="card-title fs-4">Entrevista con experto en ciberseguridad de la Universidad O&M</h3>
+                            <p class="card-text">El profesor Juan Martínez explica las nuevas tendencias en vishing y cómo las instituciones financieras están respondiendo.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-link p-0">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 fade-up delay-3">
+                    <div class="card h-100 border-0 shadow-sm blog-card">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Legislación contra vishing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-success">Legislación</span>
+                                <small class="text-muted">1 marzo, 2025</small>
+                            </div>
+                            <h3 class="card-title fs-4">Nueva legislación contra el vishing en República Dominicana</h3>
+                            <p class="card-text">El Congreso aprueba nuevas medidas para combatir el fraude telefónico con penas más severas para los estafadores.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-link p-0">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Forum Section -->
+    <section id="comunidad" class="section-padding community-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">COMUNIDAD</h6>
+                <h2 class="display-5 fw-bold mb-3">Comunidad <span class="text-gradient">Anti-Vishing</span></h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Únete a nuestra comunidad para compartir experiencias y mantenerte informado.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5 reveal">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-right">
+                    <h3 class="fs-1 fw-bold mb-4">Únete a nuestra comunidad</h3>
+                    <p class="lead mb-4">Comparte experiencias, aprende de otros y mantente informado sobre las últimas tendencias en vishing y cómo prevenirlas. Juntos podemos crear un entorno más seguro para todos.</p>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <a href="#" class="btn btn-primary btn-lg">Registrarse</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg">Ver foros</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <img src="/placeholder.svg?height=300&width=500" alt="Comunidad Anti-Vishing" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+            
+            <div class="row g-4 reveal">
+                <div class="col-md-4 fade-up delay-1">
+                    <div class="card h-100 border-0 shadow-sm community-card">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="bi bi-chat-dots text-primary"></i>Discusiones Recientes</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="community-list-item">
+                                    <a href="#">¿Cómo identificar llamadas de bancos falsas?</a>
+                                    <p class="text-muted small mb-0">32 respuestas · Hace 2 horas</p>
+                                </li>
+                                <li class="community-list-item">
+                                    <a href="#">Experiencia con estafa de "soporte técnico"</a>
+                                    <p class="text-muted small mb-0">18 respuestas · Hace 5 horas</p>
+                                </li>
+                                <li class="community-list-item">
+                                    <a href="#">¿Qué hacer después de ser víctima?</a>
+                                    <p class="text-muted small mb-0">45 respuestas · Hace 1 día</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-link p-0">Ver más discusiones <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 fade-up delay-2">
+                    <div class="card h-100 border-0 shadow-sm community-card">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="bi bi-calendar-event text-primary"></i>Próximos Eventos</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="community-list-item">
+                                    <h5 class="fw-bold mb-1">Webinar: Nuevas técnicas de vishing</h5>
+                                    <p class="text-muted mb-0"><i class="bi bi-clock me-1"></i> 20 marzo, 2025 · 18:00</p>
+                                </li>
+                                <li class="community-list-item">
+                                    <h5 class="fw-bold mb-1">Taller virtual: Protege a tus mayores</h5>
+                                    <p class="text-muted mb-0"><i class="bi bi-clock me-1"></i> 25 marzo, 2025 · 17:00</p>
+                                </li>
+                                <li class="community-list-item">
+                                    <h5 class="fw-bold mb-1">Mesa redonda: Colaboración contra el vishing</h5>
+                                    <p class="text-muted mb-0"><i class="bi bi-clock me-1"></i> 2 abril, 2025 · 19:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-link p-0">Ver calendario completo <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 fade-up delay-3">
+                    <div class="card h-100 border-0 shadow-sm community-card">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="bi bi-trophy text-primary"></i>Miembros Destacados</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="community-list-item">
+                                    <div class="community-user">
+                                        <img src="/placeholder.svg?height=50&width=50" alt="Pedro Sánchez">
+                                        <div>
+                                            <h5 class="fw-bold mb-1">Pedro Sánchez</h5>
+                                            <p class="text-muted mb-0">Experto en seguridad · 120 contribuciones</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="community-list-item">
+                                    <div class="community-user">
+                                        <img src="/placeholder.svg?height=50&width=50" alt="Laura Díaz">
+                                        <div>
+                                            <h5 class="fw-bold mb-1">Laura Díaz</h5>
+                                            <p class="text-muted mb-0">Educadora · 95 contribuciones</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="community-list-item">
+                                    <div class="community-user">
+                                        <img src="/placeholder.svg?height=50&width=50" alt="Roberto Mejía">
+                                        <div>
+                                            <h5 class="fw-bold mb-1">Roberto Mejía</h5>
+                                            <p class="text-muted mb-0">Analista de fraudes · 87 contribuciones</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-link p-0">Ver todos los miembros <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-primary fw-bold mb-3">CONTACTO</h6>
+                <h2 class="display-5 fw-bold mb-3">¿Necesitas <span class="text-gradient">Ayuda</span>?</h2>
+                <div class="mx-auto" style="max-width: 600px;">
+                    <p class="lead text-secondary">Estamos aquí para responder tus dudas y asistirte en cualquier momento.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center gy-4 reveal">
+                <div class="col-lg-5 fade-right">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Información de Contacto</h3>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:50px;height:50px">
+                                        <i class="bi bi-geo-alt fs-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Dirección</h5>
+                                    <p class="mb-0">Ave. Independencia #200, Santo Domingo, República Dominicana</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:50px;height:50px">
+                                        <i class="bi bi-envelope fs-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Correo Electrónico</h5>
+                                    <p class="mb-0">info@prevencionvishing.edu.do</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:50px;height:50px">
+                                        <i class="bi bi-telephone fs-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Teléfono</h5>
+                                    <p class="mb-0">+1 (809) 555-1234</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary-light" style="width:50px;height:50px">
+                                        <i class="bi bi-clock fs-4 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Horario de Atención</h5>
+                                    <p class="mb-0">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <h5 class="fw-bold mb-3">Síguenos</h5>
+                                <div class="d-flex social-links">
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 fade-left">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Envíanos un mensaje</h3>
+                            <form class="contact-form" id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Nombre completo</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Correo electrónico</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Asunto de tu mensaje">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo text-white">
+                        <img src="/placeholder.svg?height=40&width=40" alt="Logo U&O" width="40" class="me-2">
+                        Universidad O&M
+                    </a>
+                    <p class="text-white-50 mb-4">Comprometidos con la educación y prevención del vishing en la República Dominicana. Trabajamos para crear una sociedad más segura y consciente de los riesgos cibernéticos.</p>
+                    <div class="social-links mb-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#que-es">¿Qué es?</a></li>
+                        <li><a href="#estadisticas">Estadísticas</a></li>
+                        <li><a href="#prevencion">Prevención</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>Recursos</h5>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#recursos">Guías</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 footer-links">
+                    <h5>Contáctanos</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt me-2"></i> Ave. Independencia #200, Santo Domingo</li>
+                        <li><i class="bi bi-telephone me-2"></i> +1 (809) 555-1234</li>
+                        <li><i class="bi bi-envelope me-2"></i> info@prevencionvishing.edu.do</li>
+                        <li><i class="bi bi-clock me-2"></i> Lun - Vie: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright mt-4">
+                <p>&copy; 2025 Universidad O&M. Todos los derechos reservados. Departamento de Seguridad Informática.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.umd.min.js"></script>
+
+</body>
+</html>
